@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Cidadãos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Cidadãos</h1>
+
+    <!-- formulário cadastro -->
+    <div class="card">
+      <h2>Cadastrar Cidadão</h2>
+      <form id="cadastroForm">
+        <div class="form-group">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required>
+          <span class="error-message" id="nome-error"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required>
+          <span class="error-message" id="cpf-error"></span>
+        </div>
+        
+        <button type="submit" class="btn-submit">Cadastrar</button>
+      </form>
+    </div>
+
+    <!-- formulario busca -->
+    <div class="card">
+      <h2>Buscar Cidadão</h2>
+      <form id="buscaForm">
+        <div class="form-group">
+          <label for="busca">Buscar por CPF ou nome:</label>
+          <input type="text" id="busca" name="busca" required>
+          <span class="error-message" id="busca-error"></span>
+        </div>
+        <button type="submit" class="btn-submit">Buscar</button>
+      </form>
+    </div>
+
+    <!-- resultado -->
+    <div id="resultado" class="resultado-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
