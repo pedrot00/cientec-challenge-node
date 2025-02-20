@@ -79,22 +79,22 @@ Abra o arquivo frontend/index.html no navegador:
 ```
 ### 5. Teste a Aplicação
 *Cadastro:
--Preencha o formulário com nome e CPF válido.
--Clique em "Cadastrar".
--Se o CPF for válido, você verá uma mensagem de sucesso.
+- Preencha o formulário com nome e CPF válido.
+- Clique em "Cadastrar".
+- Se o CPF for válido, você verá uma mensagem de sucesso.
 
 *Busca:
--Digite o CPF ou nome do cidadão cadastrado.
--Clique em "Buscar".
--Se o cidadão existir, os dados serão exibidos na área de resultado.
+- Digite o CPF ou nome do cidadão cadastrado.
+- Clique em "Buscar".
+- Se o cidadão existir, os dados serão exibidos na área de resultado.
 ---
 ## Rotas do Backend
 O backend possui  rota principal.
 Cadastrar Cidadão:
 
--Método: POST
--URL: http://localhost:3000/cadastrar
--Body (JSON)
+- Método: POST
+- URL: http://localhost:3000/cadastrar
+- Body (JSON)
 
 Os dados dos cidadãos cadastrados são armazenados em um arquivo JSON (backend/data/cidadaos.json). Esse arquivo é atualizado automaticamente sempre que um novo cidadão é cadastrado.
 Exemplo de conteúdo do arquivo:
