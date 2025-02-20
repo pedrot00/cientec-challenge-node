@@ -123,6 +123,6 @@ Abra um Pull Request 📥
 ## 📞 Contato
 Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato:
 
-📧 Email: pedro.s.teixeira@ufv.br
-🚀 Linkedin: https://www.linkedin.com/in/pedro-santos-teixeira/
-🐙 GitHub: pedrot00 
+- 📧 Email: pedro.s.teixeira@ufv.br
+- 🚀 Linkedin: https://www.linkedin.com/in/pedro-santos-teixeira/
+- 🐙 GitHub: [pedrot00 ](https://github.com/pedrot00)
