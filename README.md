@@ -41,7 +41,7 @@
 ## 📂 Como Usar
 Antes de começar, você precisa ter instalado:
   Node.Js
-   Baixe e instale a versão LTS do [Node.js]https://nodejs.org/pt.
+   Baixe e instale a versão LTS do [Node.js](https://nodejs.org/pt).
     Verifique a instalação com os comandos:
    ```sh
     node -v
