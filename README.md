@@ -1,6 +1,6 @@
 # 📋 Cadastro de Cidadãos
 
-Este é um sistema de cadastro de cidadãos com validação automática de CPF, verificação de dados e uma interface responsiva. Ele consiste em um backend em Node.js (sem frameworks) e um frontend com HTML, CSS e JavaScript. O projeto foi desenvolvido para um desafio técnico da Cientec.
+##Este é um sistema de cadastro de cidadãos com validação automática de CPF, verificação de dados e uma interface responsiva. Ele consiste em um backend em Node.js (sem frameworks) e um frontend com HTML, CSS e JavaScript. O projeto foi desenvolvido para um desafio técnico da Cientec.
 ---
 
 ## 🚀 Recursos
@@ -41,7 +41,7 @@ Este é um sistema de cadastro de cidadãos com validação automática de CPF, 
 ## 📂 Como Usar
 Antes de começar, você precisa ter instalado:
   Node.Js
-   Baixe e instale a versão LTS do Node.js.
+   Baixe e instale a versão LTS do [Node.js]https://nodejs.org/pt.
     Verifique a instalação com os comandos:
    ```sh
     node -v
