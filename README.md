@@ -82,6 +82,7 @@ Abra o arquivo frontend/index.html no navegador:
 - Preencha o formulário com nome e CPF válido.
 - Clique em "Cadastrar".
 - Se o CPF for válido, você verá uma mensagem de sucesso.
+- Caso queria testar um cpf gerado aleatoriamente recomenda-se o [gerador de CPF](https://www.geradordecpf.org/).
 
 *Busca:
 - Digite o CPF ou nome do cidadão cadastrado.
