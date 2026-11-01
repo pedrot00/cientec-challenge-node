@@ -1,129 +1,152 @@
-# 📋 Cadastro de Cidadãos
+# 📋 Cadastro de Cidadãos | Sistema de Cadastro e Validação de CPF
 
-## Este é um sistema de cadastro de cidadãos com validação automática de CPF, verificação de dados e uma interface responsiva. Ele consiste em um backend em Node.js (sem frameworks) e um frontend com HTML, CSS e JavaScript. O projeto foi desenvolvido para um desafio técnico da Cientec.
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+O **Cadastro de Cidadãos** é uma aplicação web desenvolvida para realizar o cadastro, a validação e a consulta de informações de cidadãos, com foco na integridade dos dados e na experiência do usuário.
+
+O projeto foi desenvolvido para um **desafio técnico da Cientec**, utilizando Node.js no backend, sem frameworks, e HTML, CSS e JavaScript no frontend.
+
+A aplicação permite cadastrar cidadãos, validar CPFs automaticamente e consultar informações armazenadas localmente em um arquivo JSON.
+
 ---
 
-## 🚀 Recursos
-- 📝 Validação em tempo real dos campos do formulário
-- 💳 Exibição dos dados e retorno das operações realizadas
-- 🎨 Design amigável e responsivo
-- ✅ Feedback visual para erros e sucesso no preenchimento
+## 🚀 Funcionalidades
+
+- **Cadastro de cidadãos:** registro de informações pessoais por meio de um formulário.
+- **Validação de CPF:** verificação automática da validade do documento.
+- **Validação em tempo real:** identificação de campos incorretos ou incompletos.
+- **Consulta de cidadãos:** busca de registros por nome ou CPF.
+- **Feedback visual:** mensagens de sucesso e erro durante as operações.
+- **Persistência local:** armazenamento automático dos dados em JSON.
+- **Interface responsiva:** adaptação a diferentes dispositivos e tamanhos de tela.
+
 ---
 
-## 🛠️ Tecnologias Utilizadas
-- **Node.Js**: Integração do servidor 🌍
-- **HTML5**: Estruturação do conteúdo 📄
-- **CSS3**: Estilização, animações e transições 🎨
-- **JavaScript**: Lógica para validação e interatividade ⚙️
+## 🛠️ Tecnologias utilizadas
+
+| Tecnologia | Utilização |
+|---|---|
+| **Node.js** | Servidor backend e processamento das operações. |
+| **HTML5** | Estruturação da interface e dos formulários. |
+| **CSS3** | Estilização, animações e responsividade. |
+| **JavaScript** | Validação dos campos e interatividade. |
+| **JSON** | Armazenamento local dos cidadãos cadastrados. |
+
 ---
 
-## 📁 Estrutura do Projeto
-```sh
-/projeto
-├── /backend
-│   ├── /data
-│   │   └── cidadaos.json          # Armazenamento dos cidadãos cadastrados
-│   ├── /models
-│   │   └── Cidadao.js             # Classe que representa um cidadão
-│   ├── /services
-│   │   └── CidadaoService.js      # Lógica de negócio (cadastro e busca)
-│   └── server.js                  # Ponto de entrada do servidor
-├── /frontend
-│   ├── index.html                 # Interface do usuário
-│   ├── styles.css                 # Estilos da interface
-│   └── script.js                  # Lógica do frontend
-├── /node_modules                  # Dependências do Node.js (gerada automaticamente)
-├── package.json                   # Configurações e dependências do projeto
-├── package-lock.json              # Versões exatas das dependências
-└── README.md                      # Este arquivo
+## 🗂️ Estrutura do projeto
+
+```text
+cientec-challenge-node/
+├── backend/
+│   ├── data/
+│   │   └── cidadaos.json         # Armazenamento dos registros
+│   ├── models/
+│   │   └── Cidadao.js            # Modelo dos cidadãos
+│   ├── services/
+│   │   └── CidadaoService.js     # Lógica de cadastro e busca
+│   └── server.js                 # Servidor Node.js
+├── frontend/
+│   ├── index.html                # Interface web
+│   ├── styles.css                # Estilização
+│   └── script.js                 # Interações e validações
+├── package.json
+├── package-lock.json
+└── README.md
 ```
+
 ---
-## 📂 Como Usar
-Antes de começar, você precisa ter instalado:
-  Node.Js
-   Baixe e instale a versão LTS do [Node.js](https://nodejs.org/pt).
-    Verifique a instalação com os comandos:
-   ```sh
-    node -v
-    npm -v
-   ```
----
+
+## ⚙️ Como executar
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/pt) instalado.
+- Navegador web moderno.
 
 ### 1. Clonar o repositório
-```sh
-  git clone https://github.com/pedrot00/cientec-challenge-node
-  cd cientec-challenge-node
+
+```bash
+git clone https://github.com/pedrot00/cientec-challenge-node.git
+cd cientec-challenge-node
 ```
 
-###  2.  Instale as Dependências
- ```sh
-  cd backend
-  npm install
+### 2. Instalar as dependências
+
+```bash
+npm install
 ```
 
-###  3. Inicie o Servidor Backend
-Na pasta backend, execute o servidor Node.js:
- ```sh
-  node server.js
-```
-Se tudo estiver correto, você verá a mensagem:
- ```sh
-  Servidor rodando na porta 3000
-```
-###  4. Abra o Frontend no Navegador
-Abra o arquivo frontend/index.html no navegador:
-*Você pode arrastar o arquivo para o navegador ou abrir diretamente pelo terminal:
- ```sh
-  open frontend/index.html  # No macOS
-  start frontend/index.html # No Windows
-```
-### 5. Teste a Aplicação
-*Cadastro:
-- Preencha o formulário com nome e CPF válido.
-- Clique em "Cadastrar".
-- Se o CPF for válido, você verá uma mensagem de sucesso.
-- Caso queria testar um cpf gerado aleatoriamente recomenda-se o [gerador de CPF](https://www.geradordecpf.org/).
+### 3. Iniciar o servidor
 
-*Busca:
-- Digite o CPF ou nome do cidadão cadastrado.
-- Clique em "Buscar".
-- Se o cidadão existir, os dados serão exibidos na área de resultado.
+```bash
+node backend/server.js
+```
+
+O backend será iniciado em `http://localhost:3000`.
+
+### 4. Abrir o frontend
+
+Abra o arquivo `frontend/index.html` diretamente no navegador.
+
+### 5. Testar a aplicação
+
+**Cadastro:** preencha o formulário com nome e CPF válido e clique em **Cadastrar**. O sistema apresentará uma mensagem indicando o resultado da operação.
+
+**Consulta:** informe o nome ou CPF de um cidadão cadastrado e clique em **Buscar** para visualizar as informações.
+
 ---
-## Rotas do Backend
-O backend possui  rota principal.
-Cadastrar Cidadão:
 
-- Método: POST
-- URL: http://localhost:3000/cadastrar
-- Body (JSON)
+## 💾 Armazenamento dos dados
 
-Os dados dos cidadãos cadastrados são armazenados em um arquivo JSON (backend/data/cidadaos.json). Esse arquivo é atualizado automaticamente sempre que um novo cidadão é cadastrado.
-Exemplo de conteúdo do arquivo:
- ```sh
- {
+Os cidadãos cadastrados são armazenados no arquivo `backend/data/cidadaos.json`, atualizado automaticamente durante as operações de cadastro.
+
+Exemplo de registro:
+
+```json
+{
   "nome": "João Silva",
-  "cpf": "123.456.789-09"
+  "cpf": "529.982.247-25",
   "dataCadastro": "2025-02-20T16:07:28.308Z"
 }
 ```
 
+A aplicação utiliza armazenamento local, dispensando a configuração de um banco de dados externo.
 
-## 🤝 Contribuição
-Contribuições são bem-vindas! Siga os passos abaixo:
+> **Observação:** recomenda-se utilizar dados fictícios durante os testes e evitar publicar arquivos contendo informações pessoais reais.
 
-Faça um fork do projeto 🍴
+---
 
-Crie uma branch para sua feature (git checkout -b feature/nova-feature) 🌿
+## 🔄 Comunicação com o backend
 
-Commit suas mudanças (git commit -m 'Adicionando nova feature') 💾
+O frontend realiza requisições HTTP para o servidor Node.js.
 
-Push para a branch (git push origin feature/nova-feature) 🚀
+A operação de cadastro utiliza o seguinte endpoint:
 
-Abra um Pull Request 📥
+| Método | Endpoint | Descrição |
+|---|---|---|
+| `POST` | `/cadastrar` | Recebe e processa os dados de um cidadão. |
 
-## 📞 Contato
-Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato:
+**Exemplo de requisição:**
 
-- 📧 Email: pedro.s.teixeira@ufv.br
-- 🚀 Linkedin: https://www.linkedin.com/in/pedro-santos-teixeira/
-- 🐙 GitHub: [pedrot00 ](https://github.com/pedrot00)
+```json
+{
+  "nome": "João Silva",
+  "cpf": "529.982.247-25"
+}
+```
+
+---
+
+## 👨‍💻 Autor
+
+**Pedro S. Teixeira**
+
+- **GitHub:** [pedrot00](https://github.com/pedrot00)
+- **LinkedIn:** [Pedro Santos Teixeira](https://www.linkedin.com/in/pedro-santos-teixeira/)
+- **E-mail:** pedro.s.teixeira@ufv.br
+
+Projeto desenvolvido como parte de um **desafio técnico da Cientec**, aplicando conceitos de desenvolvimento web, validação de dados e comunicação cliente-servidor.
